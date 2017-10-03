@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import { FETCH_POSTS } from '../actions';
 
+// object with ids as key, value was post
 export default function (state = {}, action) {
   switch (action.type) {
     case FETCH_POSTS:
