@@ -3,7 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 
 class PostsNew extends Component {
   onSubmit(values) {
-    // this === component 
+    // this === component
     console.log(values);
   }
 
@@ -17,7 +17,7 @@ class PostsNew extends Component {
             type="text"
             {...field.input}
           />
-        {field.meta.error}
+        {field.meta.touched ? field.meta.error : ''}
       </div>
     );
   }
