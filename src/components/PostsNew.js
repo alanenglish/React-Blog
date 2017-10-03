@@ -6,12 +6,13 @@ class PostsNew extends Component {
     return (
       <div className="form-group">
         <label>{field.label}:</label>
-        <input
-          placeholder={field.placeholder}
-          className="form-control"
-          type="text"
-          {...field.input}
-        />
+          <input
+            placeholder={field.placeholder}
+            className="form-control"
+            type="text"
+            {...field.input}
+          />
+        {field.meta.error}
       </div>
     );
   }
