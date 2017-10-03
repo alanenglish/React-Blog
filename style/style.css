@@ -2,7 +2,7 @@ form a {
   margin-left: 15px;
 }
 
-.back {
+.back, .delete, .add {
   margin-top: 10px;
   margin-bottom: 10px;
 }
